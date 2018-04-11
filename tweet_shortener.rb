@@ -48,10 +48,11 @@ def selective_tweet_shortener(array)
 end
 
 def shortened_tweet_truncator(array)
-  tweet = selective_tweet_shortener(tweet)
-  if tweet.length > 140
-    tweet[0..136] + "..."
+
+  array = selective_tweet_shortener(array)
+  if array.length > 140
+    array[0..136] + "..."
   else
-    tweet
+    array
   end
 end
