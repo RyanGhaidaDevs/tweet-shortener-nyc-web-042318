@@ -10,7 +10,7 @@ def word_substituter(tweet)
   i = 0
   string = ""
   tweet_arr = []
-  tweet_arr = tweet.downcase.gsub(/[^a-z0-9\s]/i, '').split(" ")
+  tweet_arr = tweet..split(" ")
   arr2 = []
 
 
