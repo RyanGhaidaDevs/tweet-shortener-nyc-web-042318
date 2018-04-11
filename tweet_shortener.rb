@@ -1,7 +1,7 @@
 def dictionary_method()
-  
-  dictionary = {"hello" => "hi","to" => "2", "two" => "2", "too" => "2","For" => "4", "for" => "4", "four" => "4", "be" => "b", "you" => "u", "at" => "@", "and" => "&"} 
-end 
+
+  dictionary = {"hello" => "hi","to" => "2", "two" => "2", "too" => "2","For" => "4", "for" => "4", "four" => "4", "be" => "b", "you" => "u", "at" => "@", "and" => "&"}
+end
 
 def word_substituter(tweet)
   i = 0
@@ -12,7 +12,7 @@ def word_substituter(tweet)
 
 
   tweet_arr.collect do |word|
- 
+
     dictionary_method.each do |key, replacements|
 
       if word.downcase == key
@@ -27,7 +27,7 @@ def word_substituter(tweet)
   end
  arr2.join(" ")
  end
- 
+
   def bulk_tweet_shortener(array)
    i = 0
    while i < array.length
@@ -44,7 +44,7 @@ def selective_tweet_shortener(array)
    arr = []
 
    while i < array.length
-    puts array[i].length 
+    puts array[i].length
       if array[i].length > 140
 
         arr << word_substituter(array[i])
