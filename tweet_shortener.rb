@@ -49,12 +49,9 @@ def word_substituter(tweet)
      if array[i].length > 140
 
        puts word_substituter(array[i])
-
-
-
+       
        i += 1
-
-
+       
      else
 
       puts array[i]
