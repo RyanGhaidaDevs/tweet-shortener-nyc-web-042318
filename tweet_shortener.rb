@@ -39,16 +39,16 @@ def word_substituter(tweet)
     end
 
  end
- 
+
  def selective_tweet_shortener(array)
 
    i = 0
-
+   arr = []
    while i < array.length
 
       if array[i].length > 140
 
-        puts word_substituter(array[i])
+        arr << word_substituter(array[i])
 
 
 
@@ -57,7 +57,7 @@ def word_substituter(tweet)
 
       else
 
-       puts array[i]
+       arr << array[i]
 
         i += 1
 
@@ -65,5 +65,5 @@ def word_substituter(tweet)
       end
 
     end
-
+  puts arr
  end
