@@ -44,4 +44,4 @@ def selective_tweet_shortener(array)
    arr = []
 
 puts array
-end 
+end
