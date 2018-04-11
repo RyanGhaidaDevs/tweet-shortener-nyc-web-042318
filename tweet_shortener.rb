@@ -46,8 +46,9 @@ def word_substituter(tweet)
    while i < array.length && array[i].length < 140
      puts bulk_tweet_shortener(array)
      i += 1
+   end 
    else
      puts array[i]
-     i +=1 
+     i +=1
    end
  end
