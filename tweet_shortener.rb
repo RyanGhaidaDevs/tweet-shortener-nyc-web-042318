@@ -34,7 +34,7 @@ def word_substituter(tweet)
    i = 0
    while i < array.length
 
-   puts word_substituter(array[i])
+   word_substituter(array[i])
    i+=1
     end
 
