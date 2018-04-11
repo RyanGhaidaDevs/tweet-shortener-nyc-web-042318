@@ -17,7 +17,7 @@ def word_substituter(tweet)
 
     dictionary_method.each do |key, replacements|
 
-      if word == key
+      if word.downcase == key
 
          word = replacements
 
